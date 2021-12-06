@@ -1,0 +1,71 @@
+.item {
+  width: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.items {
+  counter-reset: seq; /* 重置计数器成0 */
+}
+
+.item:before {
+  counter-increment: seq; /* 增加计数器值 */
+  content: counter(seq); /* 显示计数器 */
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  left: -21px;
+}
+
+.item:last-child:before {
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGQTQxODsiIHBvaW50cz0iMCw0NzcuNzAzIDI1Niw0NzcuNzAzIDI4OS4zOTEsMjU2IDI1NiwzNC4yOTcgIi8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRjhBMUU7IiBwb2ludHM9IjI1NiwzNC4yOTcgMjU2LDQ3Ny43MDMgNTEyLDQ3Ny43MDMgIi8+CjxnPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojMzI0ODYwOyIgY3g9IjI1NiIgY3k9IjQwNS4zNTkiIHI9IjE2LjY5NiIvPgoJPHJlY3QgeD0iMjM5LjMwNCIgeT0iMTc3LjE4NSIgc3R5bGU9ImZpbGw6IzMyNDg2MDsiIHdpZHRoPSIzMy4zOTEiIGhlaWdodD0iMTc4LjA4NyIvPgo8L2c+Cjwvc3ZnPgo=);
+  border: none;
+  width: 22px;
+  height: 22px;
+}
+
+.item:after {
+  width: 0px;
+  height: 28px;
+  content: '';
+  position: absolute;
+  border-left: 1px dashed gray;
+  left: -12px;
+  top: 18px;
+}
+
+.item:last-child:after {
+  content: none;
+}
+
+.item-active:after {
+  content: none;
+}
+
+.item > .content {
+  display: flex;
+}
+
+.text {
+  margin-right: 30px;
+}
+.container {
+  position: relative;
+  margin-left: 46px;
+}

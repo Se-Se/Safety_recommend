@@ -1,0 +1,13 @@
+.common-table-content .tea-layout__content-body-inner {
+  max-width: fit-content;
+  min-width: 1200px;
+}
+
+.margin-r-30 {
+  margin-right: 30px;
+}
+
+.modal-text .tea-col {
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,0 +1,54 @@
+.main-content-body {
+  width: 100%;
+}
+.main-content-body .tea-layout__content-body-inner {
+  width: 100%;
+  max-width: none;
+}
+
+.main-content-body .main-card-body {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+.main-card-item {
+  width: 340px;
+  height: 194px;
+  word-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+}
+.main-card-item .main-card-img {
+  height: 60px;
+  background: url('////main.qcloudimg.com/raw/6c8fd423cd9bdd7a77b0e99725e04fff.png');
+  padding: 0;
+}
+.main-card-item .main-item-body {
+  padding: 10px 20px;
+}
+.main-card-item .tea-card__title {
+  margin-bottom: 10px;
+}
+.main-card-item .tea-card__content {
+  height: 54px;
+  overflow-y: auto;
+}
+.main-card-item .tea-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+.main-card-item .tea-card__footer {
+  border: 0;
+}
+.main-modal {
+  width: 600px;
+  margin: auto;
+}
+.main-card-item .main-item-edit-btn {
+  font-family: 'PingFangSC-Regular';
+  font-weight: normal;
+  font-size: 12px;
+  color: #004dff;
+}

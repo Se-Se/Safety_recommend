@@ -1,0 +1,25 @@
+.dashboard-content {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100% - 40px);
+    background-color: #020732;
+    left: 0;
+    margin: 20px;
+    .react-grid-layout {
+        height: 100%!important;
+    }
+    &.edit {
+        margin: 0;
+        height: 100%;
+    }
+    &.group {
+        .group-content {
+            z-index: 29;
+        }
+    }
+    
+    .react-grid-placeholder {
+        background: rgba(40,119,255,0.10);
+    }
+}

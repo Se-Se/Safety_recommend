@@ -1,0 +1,106 @@
+.recommend-content-body {
+  width: 100%;
+  overflow-x: auto;
+}
+.recommend-content-body .tea-layout__content-body-inner {
+  width: 100%;
+  max-width: none;
+}
+.recommend-content-body .tea-layout__content-body-inner .tea-grid {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.recommend-content-body .recommend-area-item {
+  height: 100%;
+  min-height: 689px;
+  width: 274px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recommend-area-wrap .tea-col {
+  height: 100%;
+}
+
+.recommend-area-item .recommend-item-container {
+  padding: 40px 10px;
+}
+.recommend-area-item .recommend-item-container .category-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 40px;
+  min-height: 40px;
+  height: inherit;
+}
+.recommend-area-item .recommend-item-container .category-group .category-title {
+  width: 56px;
+  height: 20px;
+  line-height: 20px;
+  font-family: 'PingFangSC-Semibold';
+  font-weight: bolder;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  margin-right: 8px;
+  overflow: hidden;
+  text-align: right;
+}
+.recommend-area-item .recommend-item-container .category-group .svg-content {
+  width: 40px;
+  height: inherit;
+  position: relative;
+}
+.category-group .svg-content .svg-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+}
+.cagegory-items-content {
+  width: 140px;
+  overflow: hidden;
+}
+.recommend-area-item .recommend-item-container .category-group .cagegory-items-content .cagegory-item {
+  margin-bottom: 30px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 2px;
+  font-family: 'PingFangSC-Regular';
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.recommend-area-item .recommend-item-header {
+  height: 40px;
+  line-height: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  font-weight: bold;
+  font-family: 'PingFangSC-Semibold';
+}
+.recommend-area-item .recommend-item-header-border {
+  width: 274px;
+  height: 1px;
+  background-color: #dddddd;
+}
+.recommend-wrap {
+  overflow: hidden;
+}
+
+.add-recommend.tea-form--inline .tea-form__item {
+  margin-right: 30px;
+}
+.add-remcommend-title .tea-form__item .tea-form__label {
+  padding-right: 0;
+}
